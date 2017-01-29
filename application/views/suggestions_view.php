@@ -1,0 +1,1 @@
+<h1>This is suggestions view</h1>

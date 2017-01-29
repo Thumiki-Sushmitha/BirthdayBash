@@ -1,0 +1,1 @@
+<h1>This is photos view</h1>
