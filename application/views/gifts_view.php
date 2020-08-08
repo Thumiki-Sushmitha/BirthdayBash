@@ -1,10 +1,10 @@
 <style type="text/css">
 	.dropbtn {
-    background-color: #4CAF50;
+    background-color: navy;
     color: white;
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border: 2px white;
     cursor: pointer;
 }
 .dropdown {
@@ -20,7 +20,7 @@
     z-index: 1;
 }
 .dropdown-content a {
-    color: black;
+    color: blue;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -30,7 +30,7 @@
     display: block;
 }
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: blue;
 }
 </style>
 <div>
@@ -85,7 +85,7 @@
 	<table class="table">
 	<tr>
 		<td>
-			<button  class="btn btn-success" id="clothing">Clothing</button>
+			<button  class="btn btn-success" id="clothing" background-color : navy>Clothing</button>
 <script type="text/javascript">
     document.getElementById("clothing").onclick = function () {
         location.href = "<?php echo base_url(); ?>home/getgifts/clothing";

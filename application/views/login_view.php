@@ -7,17 +7,15 @@
     <title>Acount Login</title>
 </head>
 <body>
-<div class="jumbotron">
     <h1 align="center">Login Page</h1>
-    <p align="center">Enter Login Details:</p>
-  </div>
+    <p align="center">please Enter your login Details:</p>
 <div class="container-fluid">
 <div class=" col-sm-4"></div>
                 <div class="jumbotron  col-sm-6">
                     <h3>Log In</h3>
                     <?php echo validation_errors(); ?>
                     
-                    <form class="form-horizontal" method="post" action="<?php echo base_url(); ?>login/verifylogin">
+                    <form class="form-horizontal" method="post" action="login/verifylogin">
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="id_username">
                                 Username:
@@ -41,9 +39,9 @@
                             
                         </div>
                     </form>
-                    Dont have an account?<br><br>
+                    Dont have an account?&nbsp
                             <div class="col-sm-offset-2 ">
-                                <a href="<?php echo base_url(); ?>register">Register</a>
+                                <a href="<?php echo base_url(); ?>register"> Register</a>
                             </div>
                 </div>
 

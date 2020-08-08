@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>BirthdayBash
-</title>
+<title>BirthdayBash</title>
+<link rel="icon" href="<?php echo base_url(); ?>assets/images/favicon.jpg" >
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.css">
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/jquery/jquery.js"></script>
+</head>
 <style>
 body
 {
 	margin:0;
 }
 #sname{
-padding-top: 40px;
+	padding-top: 20px;
 	background-color: navy;
 	color: white;
 	font-weight: bold;

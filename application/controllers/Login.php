@@ -12,7 +12,9 @@ class Login extends CI_Controller {
  function index()
  {
    $this->load->helper(array('form'));
+   $this->load->view('header');
    $this->load->view('login_view');
+   $this->load->view('footer');
  }
 
  function verifylogin()
@@ -20,16 +22,18 @@ class Login extends CI_Controller {
  	$this->load->model('user','',TRUE);
    $this->load->library('form_validation');
    $this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
-   $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|callback_check_database');
+  $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean|callback_check_database');
    if($this->form_validation->run() == TRUE)
    {
+    echo "<script>alert('Login successful');</script>";
    	redirect('home', 'refresh');
      //Field validation failed.  User redirected to login page
      
    }
    else
    {
-     //Go to private area
+     echo "<script>alert('Invalid Username or password');</script>";
+      //Go to private area
      redirect('login', 'refresh');
    }
  
